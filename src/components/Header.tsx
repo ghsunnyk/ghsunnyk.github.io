@@ -42,9 +42,10 @@ function Header() {
           {links.map(link => (
             <li
               key={link.name}
-              className={cn('hover:text-primary', {
+              className={cn('animate-fade-in-down hover:text-primary', {
                 'text-primary': pathname === link.href,
               })}
+              style={{ animationDelay: '100ms' }}
             >
               <Link to={link.href} className='group relative block py-1'>
                 <span
