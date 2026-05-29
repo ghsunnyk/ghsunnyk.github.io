@@ -76,9 +76,9 @@ const Contact = () => {
   }
 
   return (
-    <main className='relative min-h-screen overflow-hidden px-4 py-8 md:py-16'>
-      <section className='relative z-10 mx-auto max-w-5xl'>
-        <header className='mb-12 md:mb-16'>
+    <main className='relative min-h-screen overflow-hidden'>
+      <section className='relative z-10 px-4 py-16 md:px-16'>
+        <header className='mb-12 md:my-16'>
           <h1
             className='animate-fade-in-down mb-4 text-3xl font-extrabold md:text-6xl'
             style={{ animationDelay: '100ms' }}
@@ -94,7 +94,7 @@ const Contact = () => {
           </p>
         </header>
 
-        <div className='grid gap-10 md:grid-cols-5 md:gap-12'>
+        <div className='grid w-full gap-10 md:grid-cols-5 md:gap-12'>
           {/* Direct contact + socials */}
           <div
             className='animate-fade-in-up flex flex-col gap-8 md:col-span-2'
