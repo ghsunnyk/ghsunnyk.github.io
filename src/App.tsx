@@ -1,7 +1,9 @@
 import { Moon, Sun } from 'lucide-react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Header from './components/Header'
+import About from './pages/About'
 import Contact from './pages/Contact'
+import Experience from './pages/Experience'
 import Home from './pages/Home'
 import { useTheme } from './providers/ThemeProvider'
 
@@ -17,6 +19,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/experience' element={<Experience />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
 

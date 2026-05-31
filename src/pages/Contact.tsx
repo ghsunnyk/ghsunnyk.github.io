@@ -77,7 +77,7 @@ const Contact = () => {
 
   return (
     <main className='relative min-h-screen overflow-hidden'>
-      <section className='relative z-10 px-4 py-16 md:px-16'>
+      <section className='relative z-10 mx-auto max-w-7xl px-4 py-16 md:px-16 md:py-20'>
         <header className='mb-12 md:my-16'>
           <h1
             className='animate-fade-in-down mb-4 text-3xl font-extrabold md:text-6xl'

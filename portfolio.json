@@ -1,16 +1,33 @@
 {
   "name": "Sunny Kumar",
-  "username": "",
+  "username": "sunnyk",
   "tagline": "Full stack web developer",
   "bio": "Software Engineer with 1 years of experience.",
   "location": "India",
   "yearsOfExperience": "1",
+  "profileImage": "/profile.jpg",
+  "resume": "/Resume.pdf",
   "homePage": {
     "greeting": "Hi there 👋 I am",
     "description": "I am highly skilled, confident full-stack developer whose loves building high-quality products from the ground up.",
-    "currentStatus": "Looking for a new opportunity to grow and learn.",
+    "currentStatus": "Currently working as a Software Engineer at Kalgudi Digital Pvt Ltd.",
     "githubComment": "// find the code of this portfolio at ",
     "githubLink": "https://github.com/ghsunnyk/my-portfolio"
+  },
+  "aboutPage": {
+    "title": "A little about me",
+    "subtitle": "Developer and lifelong learner — here's the story behind the code.",
+    "intro": [
+      "I'm Sunny — a full-stack developer who genuinely enjoys turning ideas into clean, fast, and reliable products. My journey started with curiosity about how the web works, and somewhere along the way that curiosity turned into a craft.",
+      "I love the whole stack — designing intuitive interfaces with React and Next.js, shaping robust APIs with Node.js and TypeScript, and modeling data thoughtfully with PostgreSQL or MongoDB. I care about details: how a button feels, how a query scales, how a codebase reads six months later.",
+      "Outside of work I'm always tinkering — picking up new tools, breaking things on purpose, and rebuilding them better. I believe the best engineers stay curious, ship often, and never stop learning."
+    ],
+    "funFacts": [
+      "I love playing Chess.",
+      "Linux is my daily driver.",
+      "I love side projects more than tutorials.",
+      "I prefer dark mode — always."
+    ]
   },
   "contact": {
     "email": "sunnykr7104@gmail.com",
@@ -22,5 +39,124 @@
     "twitter": "https://twitter.com/xsunnykr",
     "youtube": "https://www.youtube.com/@ytsunnyk",
     "instagram": "https://instagram.com/igsunnyk"
-  }
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["JavaScript (ES6+)", "TypeScript", "Python", "HTML5", "CSS3"]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        "React.js",
+        "Next.js",
+        "React Native",
+        "Redux",
+        "React Query",
+        "Tailwind CSS",
+        "ShadCN UI"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Express.js", "GraphQL", "WebSockets", "Prisma"]
+    },
+    {
+      "category": "Databases",
+      "items": ["PostgreSQL", "MongoDB", "Redis"]
+    },
+    {
+      "category": "DevOps & Cloud",
+      "items": ["Docker", "AWS"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git & GitHub", "Linux"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science (General) — BSCG",
+      "institution": "Indira Gandhi National Open University (IGNOU)",
+      "startYear": "2022",
+      "endYear": "2025",
+      "description": "Pursued a general science degree while diving deep into self-taught web development and shipping real-world projects."
+    },
+    {
+      "degree": "Senior Secondary (12th) — Science",
+      "institution": "G.D. College, Begusarai (Bihar School Examination Board, Patna)",
+      "startYear": "2019",
+      "endYear": "2021",
+      "description": "Completed Intermediate in the Science stream (Physics, Chemistry, Mathematics) with 1st Division."
+    },
+    {
+      "degree": "Secondary (10th)",
+      "institution": "R. High School Cheriya Bariyarpur, Begusarai (Bihar School Examination Board, Patna)",
+      "startYear": "2017",
+      "endYear": "2019",
+      "description": "Completed secondary schooling with 1st Division — the years that sparked my interest in computers and problem-solving."
+    }
+  ],
+  "experience": [
+    {
+      "company": "Kalgudi-Digital",
+      "role": "Software Engineer",
+      "type": "Internship",
+      "mode": "On-site",
+      "location": "Hyderabad, IN",
+      "startDate": "May 2026",
+      "endDate": "Present",
+      "current": true,
+      "highlights": [
+        "Integrated prebuilt AI/ML capabilities into backend services using Node.js and TypeScript, enabling intelligent automation and scalable feature delivery."
+      ],
+      "techStack": ["Node.js", "TypeScript", "PostgreSQL", "AWS", "Claude"]
+    },
+    {
+      "company": "FairGauge",
+      "role": "Full Stack Developer",
+      "type": "Internship",
+      "mode": "Remote",
+      "location": "Hyderabad, IN",
+      "startDate": "May 2025",
+      "endDate": "August 2025",
+      "current": false,
+      "highlights": [
+        "Built secure login and signup functionality using credentials and Google OAuth for smooth user authentication.",
+        "Developed and integrated the blog feature, including frontend UI, backend APIs, and database connectivity."
+      ],
+      "techStack": [
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Python"
+      ]
+    },
+    {
+      "company": "RevoltronX",
+      "role": "Full Stack Developer",
+      "type": "Internship",
+      "mode": "Remote",
+      "location": "Mumbai, IN",
+      "startDate": "December 2024",
+      "endDate": "March 2025",
+      "current": false,
+      "highlights": [
+        "Built the complete dashboard page with responsive UI and smooth user experience across the application.",
+        "Implemented dark mode throughout the web application and created database schemas for the article feature."
+      ],
+      "techStack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Redis"
+      ]
+    }
+  ]
 }
