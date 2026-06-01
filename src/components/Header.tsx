@@ -37,7 +37,7 @@ function Header() {
 
   return (
     <header className='fixed top-0 right-0 left-0 z-50 flex h-16 items-center justify-end px-4 md:h-20 md:items-end md:px-24'>
-      <nav className='hidden md:block'>
+      <nav className='bg-background/50 inset-0 hidden rounded-lg px-4 py-3 backdrop-blur-xs md:block'>
         <ul className='flex gap-8'>
           {links.map(link => (
             <li

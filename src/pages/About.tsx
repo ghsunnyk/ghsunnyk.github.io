@@ -81,7 +81,7 @@ const About = () => {
                 className='text-background bg-primary hover:shadow-primary/50 inline-flex cursor-pointer items-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-lg'
               >
                 <Download className='size-4' />
-                Download Resume
+                Resume
               </a>
             </div>
           </div>
