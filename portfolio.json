@@ -6,7 +6,7 @@
   "location": "India",
   "yearsOfExperience": "1",
   "profileImage": "/profile.jpg",
-  "resume": "/Resume.pdf",
+  "resume": "https://drive.google.com/file/d/1RsPcRHHgR9HzJONnuZPeF9SfbWuZScgh/view?usp=drive_link",
   "homePage": {
     "greeting": "Hi there 👋 I am",
     "description": "I am highly skilled, confident full-stack developer whose loves building high-quality products from the ground up.",

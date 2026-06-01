@@ -33,9 +33,9 @@ const Projects = () => {
         </header>
 
         <div className='grid gap-6 md:grid-cols-5 md:gap-10'>
-          {/* Project list — compact tab pills on mobile, full sticky vertical list on desktop */}
+          {/* Project list — horizontal scroll cards on mobile, full sticky vertical list on desktop */}
           <aside
-            className='animate-fade-in-up md:col-span-2'
+            className='animate-fade-in-up min-w-0 md:col-span-2'
             style={{ animationDelay: '300ms' }}
           >
             <p className='text-primary mb-3 text-xs font-semibold tracking-wider md:mb-4'>
@@ -43,24 +43,25 @@ const Projects = () => {
             </p>
 
             <ul
-              className='-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 md:mx-0 md:flex-col md:gap-3 md:overflow-visible md:px-0 md:pb-0 md:sticky md:top-24'
+              className='-mx-4 flex flex-nowrap gap-3 overflow-x-auto px-4 pb-3 md:mx-0 md:flex-col md:gap-3 md:overflow-visible md:px-0 md:pb-0 md:sticky md:top-24'
               role='tablist'
               aria-label='Projects'
+              style={{ scrollbarWidth: 'thin' }}
             >
               {projects.map((p, i) => {
                 const isActive = i === selected
                 return (
-                  <li key={p.slug} className='shrink-0 md:shrink md:w-full'>
+                  <li key={p.slug} className='shrink-0 md:w-full md:shrink'>
                     <button
                       onClick={() => setSelected(i)}
                       role='tab'
                       aria-selected={isActive}
                       className={cn(
                         'group relative cursor-pointer rounded-md border text-left transition-all duration-300',
-                        // mobile: compact pill
-                        'px-3.5 py-2 whitespace-nowrap',
-                        // desktop: full card
-                        'md:w-full md:overflow-hidden md:px-5 md:py-5 md:whitespace-normal md:hover:-translate-y-1',
+                        // mobile: horizontally scrollable info card
+                        'w-56 px-4 py-3',
+                        // desktop: full vertical card
+                        'md:w-full md:overflow-hidden md:px-5 md:py-5 md:hover:-translate-y-1',
                         isActive
                           ? 'border-primary bg-primary/10'
                           : 'border-border bg-muted/30 hover:border-primary/40 hover:bg-primary/5'
@@ -75,24 +76,27 @@ const Projects = () => {
                         )}
                       />
 
-                      {/* Mobile: compact pill content */}
-                      <div className='flex items-center gap-2 md:hidden'>
+                      {/* Mobile: card content with number + name + tagline */}
+                      <div className='flex items-center gap-3 md:hidden'>
                         <span
                           className={cn(
-                            'text-[10px] font-semibold tracking-wider transition-colors duration-300',
-                            isActive ? 'text-primary' : 'text-foreground/40'
+                            'text-2xl font-extrabold tracking-tight transition-colors duration-300',
+                            isActive ? 'text-primary' : 'text-foreground/25'
                           )}
                         >
                           0{i + 1}
                         </span>
-                        <span
-                          className={cn(
-                            'text-sm font-bold transition-colors duration-300',
-                            isActive ? 'text-primary' : 'text-foreground/80'
-                          )}
-                        >
-                          {p.name}
-                        </span>
+                        <div className='flex min-w-0 flex-col'>
+                          <h3
+                            className={cn(
+                              'truncate text-sm font-bold transition-colors duration-300',
+                              isActive ? 'text-primary' : 'text-foreground/90'
+                            )}
+                          >
+                            {p.name}
+                          </h3>
+                          <p className='text-foreground/60 truncate text-[11px]'>{p.tagline}</p>
+                        </div>
                       </div>
 
                       {/* Desktop: full card content */}
