@@ -158,5 +158,84 @@
         "Redis"
       ]
     }
+  ],
+  "projects": [
+    {
+      "name": "Talksy",
+      "slug": "talksy",
+      "tagline": "Real-Time Chat Application",
+      "year": "2025",
+      "description": "A modern, full-stack real-time messaging platform designed for fast, reliable conversations — with secure authentication, email verification, and rich media sharing baked in.",
+      "highlights": [
+        "Built a full-stack real-time chat app using React, TypeScript, Node.js, Socket.io, and PostgreSQL.",
+        "Implemented JWT authentication, email verification, and image uploads with Cloudinary."
+      ],
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Socket.io",
+        "PostgreSQL",
+        "JWT",
+        "Cloudinary"
+      ],
+      "images": {
+        "light": "/projects/talksy-light.png",
+        "dark": "/projects/talksy-dark.png"
+      },
+      "links": {
+        "github": "https://github.com/ghsunnyk/talksy",
+        "live": "alksy-mptl.onrender.com"
+      }
+    },
+    {
+      "name": "Project Hub",
+      "slug": "project-hub",
+      "tagline": "Real-Time Client Project Dashboard",
+      "year": "2025",
+      "description": "A real-time project management dashboard built for internal agency use — combining role-based access, live activity feeds, and WebSocket-powered notifications so admins, project managers, and developers each see exactly the slice of work that matters to them.",
+      "highlights": [
+        "Built a full-stack real-time dashboard with role-based access (Admin, PM, Developer), live activity feeds, and Socket.io-powered notifications scoped to per-project and per-user rooms.",
+        "Implemented secure JWT auth with HttpOnly cookies and refresh-token rotation, plus a node-cron sweep that flags overdue tasks across all projects.",
+        "Containerized the full stack with Docker Compose, automating Prisma migrations and demo data seeding on first run."
+      ],
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "Prisma",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "images": {
+        "light": "/projects/project-hub-light.png",
+        "dark": "/projects/project-hub-dark.png"
+      },
+      "links": {
+        "github": "https://github.com/whogoodluck/project-hub",
+        "live": "https://project-hub-3yp6.onrender.com"
+      }
+    },
+    {
+      "name": "Smart-Yoga",
+      "slug": "smart-yoga",
+      "tagline": "Yoga Content & E-Commerce Platform",
+      "year": "2024",
+      "description": "A full-stack platform that pairs a yoga content hub with a complete e-commerce experience, plus an admin panel for managing blogs and products end-to-end.",
+      "highlights": [
+        "Built a full-stack yoga-focused platform using Next.js, TypeScript, NextAuth, Prisma, and PostgreSQL.",
+        "Implemented secure authentication, shopping cart, and admin panel for managing blogs and products."
+      ],
+      "techStack": ["Next.js", "TypeScript", "NextAuth", "Prisma", "PostgreSQL", "Tailwind CSS"],
+      "images": {
+        "light": "/projects/smart-yoga.png"
+      },
+      "links": {
+        "github": "https://github.com/ghsunnyk/smart-yoga",
+        "live": "https://smart-yoga.vercel.app"
+      }
+    }
   ]
 }
