@@ -43,7 +43,7 @@ const Projects = () => {
             </p>
 
             <ul
-              className='-mx-4 flex flex-nowrap gap-3 overflow-x-auto px-4 pb-3 md:mx-0 md:flex-col md:gap-3 md:overflow-visible md:px-0 md:pb-0 md:sticky md:top-24'
+              className='-mx-4 flex flex-nowrap gap-3 overflow-x-auto px-4 pb-3 md:sticky md:top-24 md:mx-0 md:flex-col md:gap-3 md:overflow-visible md:px-0 md:pb-0'
               role='tablist'
               aria-label='Projects'
               style={{ scrollbarWidth: 'thin' }}

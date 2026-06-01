@@ -130,7 +130,7 @@ const About = () => {
 
           <div className='relative'>
             <div
-              className='via-primary/40 absolute top-2 bottom-2 left-3 w-px bg-gradient-to-b from-transparent to-transparent md:left-5'
+              className='via-primary/40 absolute top-2 bottom-2 left-3 w-px bg-linear-to-b from-transparent to-transparent md:left-5'
               aria-hidden='true'
             />
 
