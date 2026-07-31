@@ -185,7 +185,7 @@
       },
       "links": {
         "github": "https://github.com/ghsunnyk/talksy",
-        "live": "alksy-mptl.onrender.com"
+        "live": "https://talksy-mptl.onrender.com"
       }
     },
     {
@@ -234,7 +234,7 @@
       },
       "links": {
         "github": "https://github.com/ghsunnyk/smart-yoga",
-        "live": "https://smart-yoga.vercel.app"
+        "live": "https://smartyoga.vercel.app"
       }
     }
   ]
